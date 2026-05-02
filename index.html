@@ -13,15 +13,10 @@ body {
 
 /* Header */
 header {
-    background: #ff6f61;
+    background: linear-gradient(45deg, #ff6f61, #ff9472);
     color: white;
     padding: 20px;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 36px;
 }
 
 /* Slider */
@@ -32,7 +27,7 @@ header h1 {
 
 .slides {
     display: flex;
-    animation: slide 12s infinite;
+    animation: slide 16s infinite;
 }
 
 .slides img {
@@ -63,12 +58,17 @@ header h1 {
 }
 
 .product {
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     color: white;
+    transition: transform 0.3s;
 }
 
-/* 4 different color themes */
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* 4 colors */
 .p1 { background: #ff6f61; }
 .p2 { background: #6a5acd; }
 .p3 { background: #20b2aa; }
@@ -76,12 +76,15 @@ header h1 {
 
 .product img {
     width: 100%;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 .price {
     font-size: 18px;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -104,10 +107,10 @@ footer {
 <!-- Slider -->
 <div class="slider">
     <div class="slides">
-        <img src="https://via.placeholder.com/1200x400?text=Kurti+Design+1">
-        <img src="https://via.placeholder.com/1200x400?text=Kurti+Design+2">
-        <img src="https://via.placeholder.com/1200x400?text=Kurti+Design+3">
-        <img src="https://via.placeholder.com/1200x400?text=Kurti+Design+4">
+        <img src="https://images.unsplash.com/photo-1610030469668-1c76b6b65a5f">
+        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf">
+        <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0">
+        <img src="https://images.unsplash.com/photo-1620799139834-6b8f844d4a3d">
     </div>
 </div>
 
@@ -119,28 +122,28 @@ footer {
     <div class="products">
 
         <div class="product p1">
-            <img src="https://via.placeholder.com/300x300?text=Floral+Kurti">
+            <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03">
             <h3>Floral Trend Kurti</h3>
             <p>Modern floral design, perfect for daily wear.</p>
             <div class="price">Rs. 800</div>
         </div>
 
         <div class="product p2">
-            <img src="https://via.placeholder.com/300x300?text=Casual+Kurti">
+            <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65">
             <h3>Casual Chic Kurti</h3>
             <p>Simple and stylish for college days.</p>
             <div class="price">Rs. 1200</div>
         </div>
 
         <div class="product p3">
-            <img src="https://via.placeholder.com/300x300?text=Ethnic+Kurti">
+            <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990">
             <h3>Ethnic Fusion Kurti</h3>
             <p>Blend of tradition and modern fashion.</p>
             <div class="price">Rs. 1500</div>
         </div>
 
         <div class="product p4">
-            <img src="https://via.placeholder.com/300x300?text=Party+Kurti">
+            <img src="https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8">
             <h3>Party Wear Kurti</h3>
             <p>Trendy look for special occasions.</p>
             <div class="price">Rs. 2000</div>
